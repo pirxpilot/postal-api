@@ -1,0 +1,37 @@
+{
+  "name": "postal-api",
+  "version": "0.0.0",
+  "description": "REST API server for libpostal",
+  "author": {
+    "name": "Damian Krzeminski",
+    "email": "pirxpilot@furkot.com",
+    "url": "https://pirxpilot.me"
+  },
+  "repository": "pirxpilot/postal-api",
+  "license": "MIT",
+  "keywords": [
+    "postal-api",
+    "libpostal",
+    "postal",
+    "addresses",
+    "address parsing"
+  ],
+  "dependencies": {
+    "@pirxpilot/connect": "^4.0.0",
+    "dotenv": "^8.0.0",
+    "postal-async": "^1.0.0",
+    "router": "^1.3.3",
+    "server-timings": "^2.0.1"
+  },
+  "devDependencies": {
+    "jshint": "^2.10.2",
+    "tape": "^4.11.0"
+  },
+  "scripts": {
+    "test": "make check"
+  },
+  "files": [
+    "index.js",
+    "lib"
+  ]
+}
