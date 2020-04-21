@@ -1,5 +1,10 @@
-sudo: false
 language: node_js
 node_js:
   - "node"
-  - "lts/*"
+cache:
+  directories:
+  - /var/lib/libpostal
+before_script:
+  - sudo mkdir -p /var/lib/libpostal
+  - sudo chmod a+w /var/lib/libpostal
+  - ./test/libpostal_data download all /var/lib/libpostal

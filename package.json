@@ -25,7 +25,9 @@
   },
   "devDependencies": {
     "jshint": "^2.10.2",
-    "tape": "^4.11.0"
+    "supertest-fetch": "^1.4.1",
+    "tape": "^4.11.0",
+    "tape-await": "^0.1.2"
   },
   "scripts": {
     "test": "make check"
