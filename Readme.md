@@ -86,7 +86,7 @@ MIT © [Damian Krzeminski](https://pirxpilot.me)
 [npm-url]: https://npmjs.org/package/postal-api
 
 [travis-url]: https://travis-ci.com/pirxpilot/postal-api
-[travis-image]: https://img.shields.io/travis/pirxpilot/com/postal-api.svg
+[travis-image]: https://img.shields.io/travis/com/pirxpilot/postal-api.svg
 
 [deps-image]: https://img.shields.io/david/pirxpilot/postal-api.svg
 [deps-url]: https://david-dm.org/pirxpilot/postal-api
