@@ -30,7 +30,8 @@
     "tape-await": "^0.1.2"
   },
   "scripts": {
-    "test": "make check"
+    "test": "make check",
+    "serve": "node index.js"
   },
   "files": [
     "index.js",
