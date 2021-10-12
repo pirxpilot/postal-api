@@ -35,5 +35,8 @@
   "files": [
     "index.js",
     "lib"
-  ]
+  ],
+  "scripts": {
+    "serve": "node index.js"
+  }
 }
