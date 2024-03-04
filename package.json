@@ -7,7 +7,7 @@
     "email": "pirxpilot@furkot.com",
     "url": "https://pirxpilot.me"
   },
-  "repository": "pirxpilot/postal-api",
+  "repository": "github:pirxpilot/postal-api",
   "license": "MIT",
   "keywords": [
     "postal-api",

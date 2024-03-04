@@ -1,0 +1,21 @@
+name: check
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+      - uses: actions/cache@main
+        id: libpostal-data
+        with:
+          path: datadir
+          key: libpostal-data
+      - name: Download libpostal data
+        if: steps.libpostal-data.outputs.cache-hit != 'true'
+        run: test/libpostal_data download all datadir
+      - uses: actions/setup-node@main
+        with:
+          node-version: 'lts/*'
+      - run: yarn install
+      - run: sudo ln -sr datadir /var/lib/libpostal
+      - run: make check
