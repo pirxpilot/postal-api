@@ -1,5 +1,5 @@
 [![NPM version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
+[![Build Status][build-image]][build-url]
 
 # postal-api
 
@@ -80,8 +80,8 @@ MIT © [Damian Krzeminski](https://pirxpilot.me)
 [postal-async]: https://www.npmjs.com/package/postal-async
 [libpostal docs]: https://github.com/openvenues/libpostal#data-files
 
-[npm-image]: https://img.shields.io/npm/v/postal-api.svg
+[npm-image]: https://img.shields.io/npm/v/postal-api
 [npm-url]: https://npmjs.org/package/postal-api
 
-[travis-url]: https://travis-ci.com/pirxpilot/postal-api
-[travis-image]: https://img.shields.io/travis/com/pirxpilot/postal-api.svg
+[build-url]: https://github.com/pirxpilot/postal-api/actions/workflows/check.yaml
+[build-image]: https://img.shields.io/github/actions/workflow/status/pirxpilot/postal-api/check.yaml?branch=main

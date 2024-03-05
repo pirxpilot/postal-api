@@ -1,22 +1,22 @@
-const test = require('tape-await');
+const test = require('node:test');
+const assert = require('node:assert/strict');
+
 const api = require('..');
 const { makeFetch } = require('supertest-fetch');
 
 const fetch = makeFetch(api);
 
-test('must return 404 on invalid URL', async function (t) {
+test('must return 404 on invalid URL', async function () {
   await fetch('/unknown')
     .expect(404);
-  t.pass('HTTP error is 404');
 });
 
-test('must parse address', async function (t) {
+test('must parse address', async function () {
   const data = await fetch('/parse?address=781+Franklin+Ave+Crown+Hts+Brooklyn+NY')
     .expect(200)
     .expect('content-type', 'application/json; charset=utf-8')
     .json();
-  t.deepEqual(data, [
-    {
+  assert.deepEqual(data, [{
       "label": "house_number",
       "value": "781"
     },
@@ -39,12 +39,12 @@ test('must parse address', async function (t) {
   ]);
 });
 
-test('must expand address', async function (t) {
+test('must expand address', async function () {
   const data = await fetch('/expand?address=781+Franklin+Ave+Crown+Hts+Brooklyn+NY')
     .expect(200)
     .expect('content-type', 'application/json; charset=utf-8')
     .json();
-  t.deepEqual(data, [
+  assert.deepEqual(data, [
     '781 franklin avenue crown heights brooklyn ny',
     '781 franklin avenue crown heights brooklyn new york'
   ]);

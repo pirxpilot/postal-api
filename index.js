@@ -7,7 +7,7 @@ const POSTAL_API_PORT = process.env.POSTAL_API_PORT || 4030;
 
 const app = connect();
 
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   res.locals = {};
   next();
 });

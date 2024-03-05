@@ -7,7 +7,7 @@
     "email": "pirxpilot@furkot.com",
     "url": "https://pirxpilot.me"
   },
-  "repository": "pirxpilot/postal-api",
+  "repository": "github:pirxpilot/postal-api",
   "license": "MIT",
   "keywords": [
     "postal-api",
@@ -18,16 +18,15 @@
   ],
   "dependencies": {
     "@pirxpilot/connect": "^4.0.0",
-    "dotenv": "^8.0.0",
+    "dotenv": "~16",
+    "parseurl": "~1",
     "postal-async": "^1.0.0",
     "router": "^1.3.3",
     "server-timings": "^2.0.1"
   },
   "devDependencies": {
-    "jshint": "^2.10.2",
-    "supertest-fetch": "^1.4.1",
-    "tape": "^4.11.0",
-    "tape-await": "^0.1.2"
+    "@pirxpilot/jshint": "~3",
+    "supertest-fetch": "^1.5.0"
   },
   "scripts": {
     "test": "make check",
