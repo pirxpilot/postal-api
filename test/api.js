@@ -16,8 +16,7 @@ test('must parse address', async function () {
     .expect(200)
     .expect('content-type', 'application/json; charset=utf-8')
     .json();
-  assert.deepEqual(data, [
-    {
+  assert.deepEqual(data, [{
       "label": "house_number",
       "value": "781"
     },
