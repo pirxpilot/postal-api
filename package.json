@@ -1,6 +1,6 @@
 {
   "name": "postal-api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "REST API server for libpostal",
   "author": {
     "name": "Damian Krzeminski",
